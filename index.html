@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список задач</title>
+    <style>
+        body {
+            background-color: rgba(174, 216, 202, 0.452);
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: rgb(168, 131, 131);
+        }
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .task-item input[type="text"] {
+            display: none;
+        }
+    </style>
+</head>
+    <h1>Список задач</h1>
+<input type="text" id="taskInput" placeholder="Введите новую задачу">
+<button id="addTask">Добавить задачу</button>
+<div>
+    <button id="showAll">Показать все</button>
+    <button id="showCompletedTasks">Показать выполненные</button>
+    <button id="showIncompleteTasks">Показать невыполненные</button> 
+</div>
+<ul id="taskList"></ul>
+<script src="script.js"></script>
+</body>
+</html>
